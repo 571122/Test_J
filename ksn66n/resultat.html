@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .white-background {
+        background-color: #fff;
+      }
+
+      header.main-header {
+        height: 80px;
+        padding: 24px 56px;
+        box-sizing: border-box;
+      }
+
+      main {
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gray-background {
+        background-color: #f4f8fa;
+      }
+
+      div.card {
+        max-width: 560px;
+        height: 511px;
+        position: relative;
+        padding: auto;
+        background: #ffffff;
+        box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+        border-radius: 8px;
+      }
+      .house {
+        display: flex;
+        justify-content: flex-start;
+        width: 480px;
+        height: 64px;
+        margin-top: 32px;
+        margin-left: 40px;
+      }
+      .bud {
+        background: #ffffff;
+
+        border: 4px solid #666;
+
+        width: 56.2px;
+        height: 49.4px;
+        left: 56px;
+        top: 24px;
+      }
+
+      .buy {
+        padding-left: 16px;
+        margin: 0;
+
+        width: 400px;
+        height: 29px;
+
+        /* LG / headingSmall */
+        font-family: "Rubik";
+        font-style: normal;
+        font-size: 24px;
+        line-height: 120%;
+
+        /* identical to box height, or 29px */
+
+        /* $blueGray900 */
+        color: #1e2a32;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .saving {
+        padding-left: 16px;
+        margin-top: 4px;
+
+        width: 400px;
+        height: 24px;
+
+        /* LG / paragraph */
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        /* identical to box height, or 24px */
+
+        /* $blueGray400 */
+        color: #708797;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      #Imputs {
+        width: 480px;
+        height: 81px;
+
+        margin-left: 40px;
+        margin-top: 36px;
+      }
+
+      .tot-rech {
+        display: flex;
+        font-family: "Work Sans";
+        font-style: normal;
+
+        font-size: 14px;
+        line-height: 150%;
+      }
+
+      .reach {
+        margin-left: 197px;
+      }
+
+      .inputs-container {
+        display: flex;
+        margin-top: 4px;
+      }
+
+      .everything {
+        box-sizing: border-box;
+        width: 272px;
+        height: 56px;
+        border: 1px solid #e9eef2;
+        /* $neutralWhite */
+        background: #ffffff;
+
+        /* $blueGray50 */
+
+        border-radius: 4px;
+        padding: 14px 17px;
+      }
+
+      .okt {
+        box-sizing: border-box;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin-left: 16px;
+
+        /* $neutralWhite */
+        background: #ffffff;
+
+        /* $blueGray50 */
+        border: 1px solid #e9eef2;
+        border-radius: 4px;
+        width: 192px;
+        height: 56px;
+        padding: 4px 20px;
+      }
+
+      #calculation {
+        width: 480px;
+        height: 155px;
+        left: 7.1%;
+
+        /* $neutralWhite */
+        background: #ffffff;
+        border: 1px solid #e9eef2;
+        border-radius: 8px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 24px;
+      }
+
+      .m-s {
+        display: flex;
+        height: 38px;
+        width: 416px;
+        margin-left: 32px;
+        margin-top: 24px;
+        border: none;
+      }
+
+      .monthly {
+        font-family: "Work Sans";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 120%;
+        padding-left: 0px;
+        padding-top: 7px;
+
+        color: #1e2a32;
+        width: 224px;
+      }
+      .sum {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 131px;
+        font-size: 32px;
+        line-height: 120%;
+        padding-top: 0x;
+        padding-left: 62.5px;
+
+        /* $brandColorSecondary */
+        color: #0079ff;
+      }
+
+      .container-planing {
+        width: 480px;
+        height: 80px;
+        background: #f4f8fa;
+
+        margin-top: 16px;
+      }
+
+      #inp_1: {
+        position: relative;
+      }
+
+      input {
+        margin-top: 35px;
+        margin-left: 120px;
+        background: #1b31a8;
+        border-color: #1b31a8;
+        border-radius: 32px;
+        width: 320px;
+        height: 56px;
+      }
+
+      input {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: Work Sans, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="white-background main-header"></header>
+
+    <main class="gray-background">
+      <div class="card">
+        <header class="house">
+          <div class="bud">
+            <img src="/IMG" alt="а_т" />
+          </div>
+          <div>
+            <h2 class="buy">Buy a hause</h2>
+            <span class="saving">Saving goal</span>
+          </div>
+        </header>
+
+        <div id="Imputs">
+          <div class="tot-rech">
+            <div class="total">Total amount</div>
+            <div class="reach">Reach goal by</div>
+          </div>
+
+          <div class="inputs-container">
+            <div class="everything">$25,000</div>
+            <div class="okt">-Oktober></div>
+          </div>
+        </div>
+
+        <div id="calculation">
+          <div class="m-s">
+            <div class="monthly">Monthly amount</div>
+            <div class="sum">$520.83</div>
+          </div>
+          <div class="container-planing">1455</div>
+        </div>
+        <div id="inp_1">
+          <input type="submit" name="submit" value="Confirm" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

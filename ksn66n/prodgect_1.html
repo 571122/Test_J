@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <style>
+      body {
+        position: relative;
+      }
+
+      .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .gray-background {
+        background-color: #f4f8fa;
+      }
+
+      .white-background {
+        background-color: #fff;
+      }
+
+      * .card {
+        background: #ffffff;
+
+        box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+        border-radius: 8px;
+      }
+
+      .logotyp {
+        background: #ffffff;
+
+        border: 4px solid #666;
+
+        width: 100px;
+        height: 32px;
+        right: 56px;
+        bottom: 24px;
+      }
+
+      /* .plan {
+        text-align: center;
+        color: #1b31a8;
+        font-family: Work Sans, sans-serif;
+      }
+
+      .bold {
+      } */
+
+      .bud {
+        background: #ffffff;
+
+        border: 4px solid #666;
+
+        width: 47px;
+        height: 43px;
+        left: 56px;
+        top: 24px;
+      }
+
+      .house {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .buy {
+        fcolor: #1e2a32;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Work Sans, sans-serif;
+      }
+
+      .saving {
+        fcolor: #708797;
+        font-size: 16px;
+        font-family: Work Sans, sans-serif;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+      .total_reach {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #1e2a32;
+        font-size: 14px;
+        font-family: Work Sans, sans-serif;
+      }
+      .reach {
+        text-align: right;
+      }
+      .dollar {
+        color: #cbd5dc;
+        font-size: 24px;
+      }
+
+      .sum {
+        color: #4d6475;
+        font-size: 24px;
+        font-family: Rubik, sans-serif;
+        font-weight: bold;
+      }
+
+      .your {
+        color: #1c1e1f;
+        font-size: 12px;
+        font-family: Work Sans, sans-serif;
+      }
+
+      .planning {
+        background: #f4f8fa;
+        width: 480px;
+        height: 80px;
+        text-align: center;
+      }
+
+      input {
+        background: #1b31a8;
+        border-color: #1b31a8;
+        border-radius: 32px;
+        width: 320px;
+        height: 56px;
+      }
+
+      input {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: Work Sans, sans-serif;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body class="gray-background">
+    <header class="white-background main-header">
+      <img class="logotyp" />
+    </header>
+
+    <div class="card">
+      <!-- <p class="plan">
+        Let's plan your <span class="bold"> saving goal</span>.
+      </p> -->
+
+      <header class="house">
+        <img
+          class="bud"
+          src="https://mxcjqj.csb.app/House-IMG/house.img"
+          alt="Б_н"
+        />
+        <p class="buy">Buy a house</p>
+        <p class="saving">Saving goal</p>
+      </header>
+
+      <div class="total_rech">
+        <div class="total">Total amount</div>
+        <div class="rech">Reach goal by</div>
+      </div>
+
+      <div class="dollar_kalendar">
+        <div class="dollar">$<span class="sum"> 25,000 </span></div>
+        <select class="kalendar">
+          Вибір дати _ місяць_рік
+        </select>
+      </div>
+      <div>
+        <p class="monthly">Monthly amount $ 520.83</p>
+        <div class="planning">
+          <p class="your">
+            You’re planning <span class="bold"> 48 monthly deposits</span> to
+            reach your <span class="bold">$ 25,000</span> goal by
+            <span class="bold">October 2020</span>.
+          </p>
+        </div>
+      </div>
+
+      <div id="inp">
+        <input type="submit" name="submit" value="Confirm" />
+      </div>
+
+      <br />
+    </div>
+  </body>
+</html>
